@@ -1,2 +1,3 @@
 #!/bin/bash
-chmod 751 hello exit chmod 555 7-everybody
+chmod 751 hello
+chmod 555 7-everybody
