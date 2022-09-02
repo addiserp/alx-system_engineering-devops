@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo find . -type d -exec chmod -R a+rx ./
+sudo find . -type d -exec chmod -R a+rwx {} \
