@@ -1,2 +1,2 @@
 #!/bin/bash
-{export POWER=1214 DIVIDE=78 echo $POWER/$DIVIDE}
+export POWER=1214 DIVIDE=78 | echo ( $POWER/$DIVIDE )
