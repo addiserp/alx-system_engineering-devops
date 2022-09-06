@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ "$id" = "$USER" ]; then   
+    echo "Hello User $USER"
+fi
