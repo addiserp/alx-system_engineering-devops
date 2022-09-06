@@ -1,3 +1,2 @@
 #!/bin/bash
-awk 'FNR==3 {print}' iacta
-
+grep "Alea iacta est" iacta
