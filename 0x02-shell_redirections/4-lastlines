@@ -1,2 +1,2 @@
-#!/bin/bash
+#11;rgb:1e1e/1e1e/1e1e!/bin/bash
 tail -n 10 /etc/passwd
