@@ -1,2 +1,2 @@
 #!/bin/bash
-export BREATH=1214 LOVE=78 | echo ( $POWER**$DIVIDE )
+echo $(($BREATH**$LOVE))
