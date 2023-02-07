@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# looping best school 10 times
 for i in 10 ; do
         cat "Best School"
 done
