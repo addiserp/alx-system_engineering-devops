@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in 10 ; do
+        cat "Best School"
+done
