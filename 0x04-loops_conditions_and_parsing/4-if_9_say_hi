@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # looping best school 10 times using while
 # 9 line print hi
@@ -10,5 +9,5 @@ do
 		echo "Hi"
 	fi
 	echo  "Best School"
-	((i++))
+	(($i++))
 done
