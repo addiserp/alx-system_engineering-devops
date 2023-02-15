@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\0x05-processes_and_signals"
+    "\\0x05-processes_and_signals",
+    "\\0x06-regular_expressions"
   ],
-  "SelectedNode": "\\0x05-processes_and_signals",
+  "SelectedNode": "\\0x06-regular_expressions",
   "PreviewInSolutionExplorer": false
 }
