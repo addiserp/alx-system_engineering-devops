@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # To display the active running processes
 
-pstree
+ps aux
