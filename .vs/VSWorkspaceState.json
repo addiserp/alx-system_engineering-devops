@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\0x05-processes_and_signals",
-    "\\0x06-regular_expressions"
+    "\\0x07-networking_basics"
   ],
-  "SelectedNode": "\\0x06-regular_expressions",
+  "SelectedNode": "\\0x07-networking_basics",
   "PreviewInSolutionExplorer": false
 }
