@@ -1,2 +1,0 @@
-0x05-processes_and_signals project contributed by
-mikias gedlu
