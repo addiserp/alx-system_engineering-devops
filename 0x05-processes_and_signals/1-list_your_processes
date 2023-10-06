@@ -6,4 +6,4 @@
 # Display in a user-oriented format
 # & Shows process hierarchy
 
-ps uf | grep bash
+ps -e uf
