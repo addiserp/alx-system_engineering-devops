@@ -1,0 +1,56 @@
+## 2. Secured and monitored web infrastructure 
+
+## 1. For every additional element, why are adding it? 
+
+I will try to explain how I have set up a secured and monitored web infrastructure for my project. The project consists of three servers, each hosting a different web application.
+
+## 2. What are firewalls for? 
+
+- A firewall for each server to protect them from being attacked and exploited. The firewall rules allow only the necessary ports and protocols for the web applications. The firewall also blocks any suspicious or malicious traffic that might try to compromise the servers.
+
+## 3. Why is the traffic served over HTTPS? 
+
+- An SSL certificate to serve www.foobar.com over HTTPS. This ensures that the communication between the users and the web server is encrypted and authenticated. The SSL certificate also improves the user trust of the website.
+ 
+## 4. What monitoring is used for? 
+
+- A monitoring client for each server that collects logs and sends them to my data collector. The monitoring client tracks various metrics such as CPU usage, memory usage, disk space, network traffic, etc. The monitoring client also captures any errors or exceptions that occur in the web applications and reports them to me via email or SMS.
+
+## 5. How the monitoring tool is collecting data? 
+
+The main challenges I faced were ensuring the security and availability of the servers, as well as collecting and analyzing the performance and error logs. To address these challenges, I have added the abouve components to the infrastructure:
+
+By adding these components, I have improved the security and reliability of my web infrastructure. I can also monitor the performance and health of the servers and troubleshoot any issues that might arise.
+
+
+6. Explain what to do if you want to monitor your web server QPS? 
+
+If you want to monitor your web server QPS, we can follow these steps:
+
+##  1. Determine the type of request and system architecture: 
+    The number of servers required to handle a specific QPS depends on the type of request and the system architecture. You can use NGINX Amplify for this case or other validation tools to perform simulation of steps, plugins for RPS generation like Throughput Shaping Timer, and dashboard view for analysis and decision making.
+
+##    2. Perform iterative stress tests:
+
+    You need to do a few iterative stress tests, profiling tests for measuring various parameters of your system for various use cases in hand to see if all performance metrics are within your expected limit for more appropriate realistic data.
+
+##    3. Calculate the maximum number of requests per second:
+
+    If the request is CPU-bound, you can use the following formula: Max number of requests per second = Number of CPU Cores / Average request (task) time (seconds). If the request is memory-bound, you can use this formula: Max number of requests per second = (Total RAM / worker memory) * (1 / task time)
+    4. Make a performance test with a single server: You need to make a performance test with a single server to see how many RPS it supports.
+    5. By adding a Load Balancer: we also need to consider adding a Load Balancer in front of your servers, which dispatches the requests to all the servers (in a round-robin way).
+
+Issues
+
+A. Why terminating SSL at the load balancer level is an issue? 
+Because decryption is resource and CPU intensive. Placing the decryption burden on the load 
+balancer enables the server to spend processing power on application tasks.
+
+B. Why having only one MySQL server capable of accepting writes is an issue?
+Because once it is down it means data can be added or updated some features of the 
+application and it won’t work.
+
+C. Why having servers with all the same components (database, web server and
+application server) might be a problem? 
+Because once you have a bug in one of the components in one of the servers then the bug will 
+be valid in the other servers.
