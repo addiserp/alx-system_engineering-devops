@@ -40,7 +40,7 @@ If you want to monitor your web server QPS, we can follow these steps:
     4. Make a performance test with a single server: You need to make a performance test with a single server to see how many RPS it supports.
     5. By adding a Load Balancer: we also need to consider adding a Load Balancer in front of your servers, which dispatches the requests to all the servers (in a round-robin way).
 
-Issues
+## Issues with Secured and monitored web infrastructure
 
 A. Why terminating SSL at the load balancer level is an issue? 
 Because decryption is resource and CPU intensive. Placing the decryption burden on the load 
