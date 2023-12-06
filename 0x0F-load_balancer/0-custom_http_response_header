@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# 1.make ready by updating server
+# 2.install Nginx with -y option:
+# 3. Restart nginx server.
+# 4. will Add custom header on nginx server.
+# 5. update deafalt page with "Hello World!"
+# 6. Restart nginx server.
+
+sudo su
+apt-get update
+apt-get -y install nginx
+service nginx start
+sed -i "11i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+service nginx restart
