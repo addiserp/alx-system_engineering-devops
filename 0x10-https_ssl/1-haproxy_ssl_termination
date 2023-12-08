@@ -32,7 +32,7 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-        # start of parameters for fistum.tech
+        # start of parameters for addiserp.tech
         frontend addiserp.tech-http-frontend
                 bind	 *:80
                 http-request set-header X-Forwarded-Proto http
@@ -40,7 +40,7 @@ defaults
         
         
         frontend addiserp.tech-https-frontend
-                bind *:443 ssl crt /etc/ssl/addiserp.tech.pem
+                bind *:443 ssl crt /etc/ssl/addiserp.tech/addiserp.tech.pem
                 http-request set-header X-Forwarded-Proto https
                 default_backend addiserp.tech-backend
         
