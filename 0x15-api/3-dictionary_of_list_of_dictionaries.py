@@ -38,9 +38,9 @@ if __name__ == "__main__":
     with open("todo_all_employees.json", "w", newline="") as jfile:
         json.dump({
             data.get("id"): [{
+                "username": datad.get("username"),
                 "task": datad.get("title"),
-                "completed": datad.get("completed"),
-                "username": datad.get("username")
+                "completed": datad.get("completed")
             }
                 for datad in requests.get(url + "todos",
                                           params={"userId":
