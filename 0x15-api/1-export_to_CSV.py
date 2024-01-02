@@ -36,5 +36,6 @@ if __name__ == "__main__":
     with open("{}.csv".format(empcode), "w", newline="") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         [writer.writerow(
-            [empcode, user.get("username"), data.get("completed"), data.get("title")]
+            [empcode, user.get("username"), data.get("completed"),
+             data.get("title")]
          ) for data in todos]
