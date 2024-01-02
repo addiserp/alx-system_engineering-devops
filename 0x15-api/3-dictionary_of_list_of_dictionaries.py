@@ -36,8 +36,8 @@ if __name__ == "__main__":
         json.dump({
             data.get("id"): [{
                 "username": datad.get("username"),
-                "completed": datad.get("completed"),
-                "task": datad.get("title")
+                "task": datad.get("title"),
+                "completed": datad.get("completed")
             }
                 for datad in requests.get(url + "todos",
                                           params={"userId":
