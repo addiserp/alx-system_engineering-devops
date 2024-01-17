@@ -18,20 +18,20 @@ def recurse(subreddit, hot_list=[], after="", count=0):
         "User-Agent": "0x16-api_advanced:project:\
 v1.0.0 (by /u/firdaus_cartoon_jr)"
     }
-    options = {
+    params = {
         "after": after,
         "count": count,
         "limit": 100
     }
-    response = requests.get(url, headers=headers, params=options,
+    response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
     if response.status_code == 404:
         return None
 
-    result = response.json().get("data")
-    after = result.get("after")
-    count += result.get("dist")
-    for c in result.get("children"):
+    results = response.json().get("data")
+    after = results.get("after")
+    count += results.get("dist")
+    for c in results.get("children"):
         hot_list.append(c.get("data").get("title"))
 
     if after is not None:
