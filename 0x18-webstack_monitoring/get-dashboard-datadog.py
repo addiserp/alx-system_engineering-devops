@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-DD_SITE="datadoghq.com" DD_API_KEY="412c489f19920750e1b864bc61d37d0a" DD_APP_KEY="5640d9215cfa1cec037fdbb99aab5a343013fc4f" python3 get-dashboard-datadog.py
+DD_SITE="datadoghq.com" DD_API_KEY="xxxx" DD_APP_KEY="xxx" python3 get-dashboard-datadog.py
 """
 import sys
 import requests
